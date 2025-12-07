@@ -1,0 +1,15 @@
+{
+  "name": "smart-ai-chat",
+  "version": "1.0.0",
+  "description": "AI Chat Application with Groq API",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install && npm --prefix backend install && npm --prefix frontend install",
+    "start": "npm --prefix backend start",
+    "dev": "concurrently \"npm --prefix backend start\" \"npm --prefix frontend start\""
+  }
+}
